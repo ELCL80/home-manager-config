@@ -37,7 +37,7 @@
 
                 terminal.toggleterm = {
                     enable = true;
-                    setupOpts.winbar.name_formatter = lib.generators.mkLuaInline '' print(( function(term) return term.name end ):match(".*/(.*)"))'';
+                    setupOpts.winbar.name_formatter = lib.generators.mkLuaInline '' function(term)  return (term.name):match(".*/(.*)") end )'';
                     lazygit = {
                         enable = true;
                     };
