@@ -6,14 +6,10 @@
     home = {
         packages = with pkgs; [
             wezterm
-#            neovim
             git
+            lazygit
         ];
 
-#        file.".config/nvim" = {
-#            source = inputs.nvim-config;
-#            recursive = true;
-#        };
         file.".config/wezterm" = {
             source = "${inputs.dotfiles}/wezterm";
             recursive = true;
