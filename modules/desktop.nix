@@ -2,7 +2,7 @@
 
     imports = [
         ./mango.nix
-	./nvf.nix
+        ./nvf.nix
     ];
     home.packages = with pkgs; [
         inkscape

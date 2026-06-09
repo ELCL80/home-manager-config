@@ -1,4 +1,4 @@
-{ ... }: {
+{ lib, ... }: {
     programs.nvf = {
         enable = true;
 
@@ -37,6 +37,7 @@
 
                 terminal.toggleterm = {
                     enable = true;
+                    setupOpts.winbar.name_formatter = lib.generators.mkLuaInline '' print(( function(term) return term.name end ):match(".*/(.*)"))'';
                     lazygit = {
                         enable = true;
                     };
