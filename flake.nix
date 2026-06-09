@@ -11,7 +11,10 @@
             url = "github:mangowm/mango";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        nvf.url = "github:notashelf/nvf";
+        nvf = {
+            url = "github:notashelf/nvf";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
 
         # Other
         nvim-config = {

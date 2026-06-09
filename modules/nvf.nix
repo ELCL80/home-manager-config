@@ -35,13 +35,21 @@
                     typescript.enable = true;
                 };
 
+                terminal.toggleterm = {
+                    enable = true;
+                    lazygit = {
+                        enable = true;
+                    };
+                };
+
                 telescope.enable = true;
                 statusline.lualine.enable = true;
                 autocomplete.blink-cmp.enable = true;
 
                 dashboard.dashboard-nvim.enable = true;
 
-                images.img-clip.enable = true;
+                utility.images.img-clip.enable = true;
+                autopairs.nvim-autopairs.enable = true;
             };
         };
     };
