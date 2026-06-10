@@ -21,6 +21,7 @@
                     enable = true;
                     nvim-docs-view.enable = true;
                     lspkind.enable = true;
+                    trouble.enable = true;
                 };
 
                 languages = {
