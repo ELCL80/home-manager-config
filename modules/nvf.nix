@@ -44,7 +44,10 @@
                 };
 
                 telescope.enable = true;
-                statusline.lualine.enable = true;
+                statusline.lualine = {
+                    enable = true;
+                    theme = "onedark";
+                };
                 autocomplete.blink-cmp.enable = true;
 
                 dashboard.dashboard-nvim.enable = true;
