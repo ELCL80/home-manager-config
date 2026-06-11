@@ -5,5 +5,8 @@
         clang
         python3
         nodejs 
+        ghc
+        cabal-install
+        cargo
     ];
 }
