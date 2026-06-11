@@ -25,6 +25,15 @@
                     trouble.enable = true;
                 };
 
+                diagnostics.config.signs.text = lib.generators.mkLuaInline ''
+                    {
+                        [vim.diagnostic.severity.ERROR] = " ",
+                        [vim.diagnostic.severity.WARN] = " ",
+                        [vim.diagnostic.severity.HINT] = "󰠠 ",
+                        [vim.diagnostic.severity.INFO] = " ",
+                    }
+                '';
+
                 languages = {
                     enableTreesitter = true;
 
