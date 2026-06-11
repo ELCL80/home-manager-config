@@ -34,6 +34,8 @@
                     clang.enable = true;
                     python.enable = true;
                     typescript.enable = true;
+                    haskell.enable = true;
+                    rust.enable = true;
                 };
 
                 terminal.toggleterm = {
