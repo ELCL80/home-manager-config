@@ -15,6 +15,7 @@
                     tabstop = 4;
                     shiftwidth = 4;
                     expandtab = true;
+                    undofile = true;
                 };
 
                 lsp = {
@@ -38,6 +39,11 @@
                     rust.enable = true;
                 };
 
+                statusline.lualine = {
+                    enable = true;
+                    theme = "onedark";
+                };
+
                 terminal.toggleterm = {
                     enable = true;
                     setupOpts.winbar.name_formatter = lib.generators.mkLuaInline '' function(term)  return (term.name):match(".*/(.*)"):match("(.-);") end '';
@@ -46,16 +52,13 @@
                     };
                 };
 
-                telescope.enable = true;
-                statusline.lualine = {
-                    enable = true;
-                    theme = "onedark";
+                utility = {
+                    images.img-clip.enable = true;
+                    undotree.enable = true;
                 };
+
+                telescope.enable = true;
                 autocomplete.blink-cmp.enable = true;
-
-                dashboard.dashboard-nvim.enable = true;
-
-                utility.images.img-clip.enable = true;
                 autopairs.nvim-autopairs.enable = true;
             };
         };
